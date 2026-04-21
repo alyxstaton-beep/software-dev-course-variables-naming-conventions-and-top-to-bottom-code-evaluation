@@ -30,3 +30,24 @@ let c = 20;
 let d = a + " bought " + b + " items for $" + c + ".";
 
 console.log(d);
+
+//Issues:
+// The variables a, b, c, and d are too vague and don't explain what they mean, which makes the code harder to understaned.
+
+//Refactored Code:
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+let message = customerName + " bought " + numberOfItems + " items for $ " + totalCost + ".";
+
+console.log(message);
+
+//Additional Variables:
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+let storeName = "Target";
+let purchaseDate = "April 20";
+let message = customerName + " bought " + numberOfItems + " items for $ " + totalCost + " at " + storeName + " on " + purchaseDate + ".";
+
+console.log(message);
